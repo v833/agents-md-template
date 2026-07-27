@@ -1,0 +1,15 @@
+name: Template initialization check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check-agents-template:
+    if: github.repository != 'v833/agents-md-template'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure AGENTS.md was initialized
+        shell: bash
+        run: bash ./scripts/check-template.sh

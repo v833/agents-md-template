@@ -1,0 +1,8 @@
+---
+description: Follow the repository AGENTS.md instructions
+alwaysApply: true
+---
+
+Before editing, read and follow @AGENTS.md. If a nearer nested AGENTS.md applies to the target files, follow it as the more specific instruction source.
+
+Do not duplicate repository rules in this file.
